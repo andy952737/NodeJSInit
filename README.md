@@ -9,3 +9,15 @@
 - npm init
 - npm install express
 - npm install typescript @types/node @types/express
+
+# Node+TypeScript (HTML)
+```
+- src/
+  - service.ts
+- dist/public/
+  - index.html
+  - style.css
+```
+
+# Config
+- tsconfig.json
