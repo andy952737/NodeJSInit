@@ -6,7 +6,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true
-  }
-  //"include": ["src/**/*.ts"], // Adjust this path to match your project structure
-  //"exclude": ["dist"]
+  },
+  "include": ["src/**/*.ts"], // Adjust this path to match your project structure
+  "exclude": ["dist"]
 }

@@ -4,10 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-// Replace this
-// import express = require('express');
-// with this
-// import * as express from 'express';
 const app = (0, express_1.default)();
 const port = 3000;
 // Middleware to parse JSON requests

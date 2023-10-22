@@ -1,11 +1,5 @@
 import express, { Request, Response } from 'express';
 
-// Replace this
-// import express = require('express');
-
-// with this
-// import * as express from 'express';
-
 const app = express();
 const port = 3000;
 

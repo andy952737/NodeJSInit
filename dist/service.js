@@ -1,27 +1,17 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
-
-const server = http.createServer((req, res) => {
-  // Set the content type for the response
-  res.setHeader('Content-Type', 'text/html');
-
-  // Read the HTML file
-  fs.readFile(path.join(__dirname, 'index.html'), 'utf8', (err, data) => {
-    if (err) {
-      res.statusCode = 500;
-      res.end('Error 500 Internal Server Error');
-      return;
-    }
-
-    // Send the HTML content as the response
-    res.statusCode = 200;
-    res.end(data);
-  });
-});
-
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const path_1 = __importDefault(require("path"));
+const app = (0, express_1.default)();
 const port = 3000;
-server.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+// Serve the HTML file
+app.get('/', (req, res) => {
+    const htmlPath = path_1.default.join(__dirname, 'index.html');
+    res.sendFile(htmlPath);
 });
-
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
