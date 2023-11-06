@@ -1,4 +1,8 @@
-# NodeJS Init
+# NodeJS 開發
+
+# 方向
+- web application
+- api design & application
 
 # install mac OSX
 - brew install node
@@ -10,14 +14,19 @@
 - npm install express
 - npm install typescript @types/node @types/express
 
-# Node+TypeScript (HTML)
+# NodeJS & TypeScript(Web)
 ```
+- node/
+  - index.js
 - src/
   - service.ts
 - dist/public/
   - index.html
   - style.css
 ```
+
+# Use npm
+- sequelize
 
 # Config
 - tsconfig.json
