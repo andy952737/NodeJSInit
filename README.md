@@ -27,6 +27,7 @@
 
 # Use npm
 - sequelize
+- express
 
 # Config
 - tsconfig.json
