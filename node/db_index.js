@@ -3,14 +3,11 @@ const fs = require('fs');
 const { Client } = require('pg');
 
 // 创建 PostgreSQL 连接
-const client = new Client({
-  user: 'user',
-  host: 'localhost', // 通常是 'localhost' 或数据库服务器的 IP 地址
-  database: 'database_name',
-  password: 'password',
-  port: 5432, // 默认 PostgreSQL 端口
-});
-
+const path = require('path');
+const configPath = path.join(__dirname, 'config.js'); //絕對路徑
+const config = require(configPath);
+const client = new Client(config);
+ 
 client.connect()
   .then(() => {
     console.log('成功连接到 PostgreSQL 数据库');
