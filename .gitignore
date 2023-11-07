@@ -5,3 +5,7 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 .tsconfig.json
+
+/node/config.js 
+
+/node_modules/*
