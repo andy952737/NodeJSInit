@@ -8,7 +8,7 @@ const configPath = path.join(__dirname, 'config.js'); //絕對路徑
 const config = require(configPath);
 const client = new Client(config);
  
-client.connect()
+client.connect() 
   .then(() => {
     console.log('成功连接到 PostgreSQL 数据库');
   })
