@@ -2,11 +2,11 @@
   "name": "node_dev",
   "version": "1.0.0",
   "description": "# install mac OSX - brew install node - npm install -g typescript - tsc -v",
-  "main": "hellonode.js",
+  "main": "root.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node root.js"
   },
-  "author": "",
+  "author": "", 
   "license": "ISC",
   "dependencies": {
     "@types/axios": "^0.14.0",

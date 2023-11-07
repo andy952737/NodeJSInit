@@ -11,8 +11,9 @@
 
 # init project
 - npm init
-- npm install express
 - npm install typescript @types/node @types/express
+- npm start
+- npm run
 
 # NodeJS & TypeScript(Web)
 ```
