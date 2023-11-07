@@ -1,8 +1,8 @@
 # NodeJS 開發實戰
 
-# 方向
-- web application
-- api design & application
+# nodeJS實際應用方向
+- web application developer
+- api design & application developer
 
 # install mac OSX
 - brew install node
